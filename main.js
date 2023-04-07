@@ -1,49 +1,78 @@
-function calculateIncome() {
-  // Get inputs
-  const address = document.getElementById("address").value;
-  const state = document.getElementById("state").value;
-  const city = document.getElementById("city").value;
-  const bedrooms = document.getElementById("bedrooms").value;
-  const bathrooms = document.getElementById("bathrooms").value;
-  const quality = document.getElementById("quality").value;
-  const amenities = document.querySelectorAll('input[name="amenities"]:checked');
-  const locationRank = document.getElementById("location-rank").value;
-  
-  // Look up average nightly rate
-  let nightlyRate = 0;
-  if (state in stateRates) {
-    nightlyRate = stateRates[state];
-    if (city in cityRates[state]) {
-      nightlyRate = cityRates[state][city];
-    }
+function getStateName(state) {
+  const states = {
+    'AL': 'Alabama',
+    'AK': 'Alaska',
+    'AZ': 'Arizona',
+    'AR': 'Arkansas',
+    'CA': 'California',
+    'CO': 'Colorado',
+    'CT': 'Connecticut',
+    'DE': 'Delaware',
+    'FL': 'Florida',
+    'GA': 'Georgia',
+    'HI': 'Hawaii',
+    'ID': 'Idaho',
+    'IL': 'Illinois',
+    'IN': 'Indiana',
+    'IA': 'Iowa',
+    'KS': 'Kansas',
+    'KY': 'Kentucky',
+    'LA': 'Louisiana',
+    'ME': 'Maine',
+    'MD': 'Maryland',
+    'MA': 'Massachusetts',
+    'MI': 'Michigan',
+    'MN': 'Minnesota',
+    'MS': 'Mississippi',
+    'MO': 'Missouri',
+    'MT': 'Montana',
+    'NE': 'Nebraska',
+    'NV': 'Nevada',
+    'NH': 'New Hampshire',
+    'NJ': 'New Jersey',
+    'NM': 'New Mexico',
+    'NY': 'New York',
+    'NC': 'North Carolina',
+    'ND': 'North Dakota',
+    'OH': 'Ohio',
+    'OK': 'Oklahoma',
+    'OR': 'Oregon',
+    'PA': 'Pennsylvania',
+    'RI': 'Rhode Island',
+    'SC': 'South Carolina',
+    'SD': 'South Dakota',
+    'TN': 'Tennessee',
+    'TX': 'Texas',
+    'UT': 'Utah',
+    'VT': 'Vermont',
+    'VA': 'Virginia',
+    'WA': 'Washington',
+    'WV': 'West Virginia',
+    'WI': 'Wisconsin',
+    'WY': 'Wyoming'
+  };
+
+  if (state.length === 2) {
+    return states[state.toUpperCase()] || state;
+  } else {
+    return state;
   }
-  
-  // Calculate income based on inputs
-  let income = nightlyRate * 365 * locationRank;
-  if (quality === "average") {
-    income += 100 * bedrooms + 75 * bathrooms;
-  } else if (quality === "high-end") {
-    income += 200 * bedrooms + 150 * bathrooms;
-  } else if (quality === "luxury") {
-    income += 300 * bedrooms + 225 * bathrooms;
-  }
-  
-  for (let i = 0; i < amenities.length; i++) {
-    const amenity = amenities[i].value;
-    if (amenity === "hot-tub") {
-      income += 25;
-    } else if (amenity === "pool") {
-      income += 50;
-    } else if (amenity === "deck") {
-      income += 10;
-    } else if (amenity === "view") {
-      income += 15;
-    } else if (amenity === "waterfront") {
-      income += 100;
-    }
-  }
-  
-  // Output result
-  const resultDiv = document.getElementById("results");
-  resultDiv.innerHTML = `The estimated annual income for ${address}, ${city}, ${state} is $${income.toLocaleString()}.`;
 }
+
+function calculateIncome() {
+  const address = document.getElementById('address').value;
+  const city = document.getElementById('city').value;
+  const state = getStateName(document.getElementById('state').value);
+  const bedrooms = document.getElementById('bedrooms').value;
+  const bathrooms = document.getElementById('bathrooms').value;
+  const quality = document.getElementById('quality').value;
+  const location = document.getElementById('location').value;
+  const hotTub = document.getElementById('hot-tub').checked ? 1 : 0;
+  const pool = document.getElementById('pool').checked ? 1 : 0;
+  const waterfront = document.getElementById('waterfront').checked ? 1 : 0;
+  const views = document.getElementById('views').checked ? 1 : 0;
+  const deck = document.getElementById('deck').checked ? 1 : 0;
+  const income = estimateIncome(address, city, state, bedrooms, bathrooms, quality, location, hotTub, pool, waterfront, views, deck);
+  document.getElementById('result').innerHTML = 'Estimated Income: $' + income.toFixed(2);
+}
+
