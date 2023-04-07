@@ -59,6 +59,13 @@ function getStateName(state) {
   }
 }
 
+function estimateIncome(address, city, state, bedrooms, bathrooms, quality, location, hotTub, pool, waterfront, views, deck) {
+  // Code to estimate income based on the input parameters
+  // ...
+  // Return the estimated income
+  return 5000;
+}
+
 function calculateIncome() {
   const address = document.getElementById('address').value;
   const city = document.getElementById('city').value;
