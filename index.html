@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Short-Term Rental Property Calculator</title>
+  </head>
+  <body>
+    <h1>Short-Term Rental Property Calculator</h1>
+    <form>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address"><br><br>
+      
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state"><br><br>
+      
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city"><br><br>
+      
+      <label for="bedrooms">Number of Bedrooms:</label>
+      <input type="number" id="bedrooms" name="bedrooms" min="0"><br><br>
+      
+      <label for="bathrooms">Number of Bathrooms:</label>
+      <input type="number" id="bathrooms" name="bathrooms" min="0"><br><br>
+      
+      <label for="quality">Quality:</label>
+      <select id="quality" name="quality">
+        <option value="average">Average</option>
+        <option value="high-end">High-End</option>
+        <option value="luxury">Luxury</option>
+      </select><br><br>
+      
+      <label for="amenities">Amenities:</label><br>
+      <input type="checkbox" id="hot-tub" name="amenities" value="hot-tub">
+      <label for="hot-tub">Hot Tub</label><br>
+      <input type="checkbox" id="pool" name="amenities" value="pool">
+      <label for="pool">Pool</label><br>
+      <input type="checkbox" id="deck" name="amenities" value="deck">
+      <label for="deck">Deck</label><br>
+      <input type="checkbox" id="view" name="amenities" value="view">
+      <label for="view">View</label><br>
+      <input type="checkbox" id="waterfront" name="amenities" value="waterfront">
+      <label for="waterfront">Waterfront</label><br><br>
+      
+      <label for="location-rank">Rank Location (1-10):</label>
+      <input type="number" id="location-rank" name="location-rank" min="1" max="10"><br><br>
+      
+      <input type="button" value="Calculate" onclick="calculateIncome()"><br><br>
+    </form>
+    
+    <div id="results"></div>
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>
