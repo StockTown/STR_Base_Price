@@ -1,63 +1,17 @@
-/* Set body background color */
 body {
+  font-family: Arial, sans-serif;
   background-color: #f2f2f2;
 }
 
-/* Set container styles */
-.container {
-  margin: auto;
-  max-width: 800px;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Set header styles */
 h1 {
-  margin-top: 0;
-  text-align: center;
+  color: #008080;
 }
 
-/* Set form label styles */
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-/* Set form input styles */
-input[type="text"],
-input[type="number"],
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
-
-/* Set checkbox input styles */
-input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-/* Set calculate button styles */
-input[type="button"] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+button {
+  background-color: #008080;
+  color: #fff;
   padding: 10px 20px;
-  margin-bottom: 10px;
-}
-
-/* Set results section styles */
-#results {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 20px;
-  margin-top: 20px;
-  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
