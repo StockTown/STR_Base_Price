@@ -1,0 +1,6 @@
+bedroomMultiplier,40
+bathroomMultiplier,20
+occupancyRate,0.6
+cleaningCostMultiplier,30
+OperatingExpensePercentage,0.15
+hostingFeePercentage,0.1
