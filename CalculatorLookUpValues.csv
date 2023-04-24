@@ -1,5 +1,5 @@
-bedroomMultiplier,40
-bathroomMultiplier,20
+bedroomMultiplier,30
+bathroomMultiplier,10
 occupancyRate,0.6
 cleaningCostMultiplier,30
 OperatingExpensePercentage,0.15
