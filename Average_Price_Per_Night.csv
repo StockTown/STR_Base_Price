@@ -1,51 +1,51 @@
 STATE,PRICE, ZIP, PRICE
 Alabama,$204, 80528, $200
-Ohio,$147
-Maine,$222
-Arizona,$287
-Oregon,$181
-Massachusetts,$222
-California,$258
-Rhode Island,$252
-Minnesota,$160
-Connecticut,$189
-South Dakota,$194
-Missouri,$172
-Florida,$217
-Texas,$214
-Nebraska,$119
-Hawaii,$248
-Vermont,$264
-New Hampshire,$237
-Illinois,$139
-Washington,$181
-New Mexico,$180
-Iowa,$123
-Wisconsin,$200
-North Carolina,$193
-Kentucky,$164
-Louisiana,$201
-Alaska,$162
-Oklahoma,$190
-Maryland,$186
-Arkansas,$178
-Pennsylvania,$192
-Michigan,$206
-Colorado,$271
-South Carolina,$220
-Mississippi,$161
-Delaware,$246
-Tennessee,$272
-Montana,$215
-Georgia,$188
-Utah,$211
-Nevada,$212
-Idaho,$186
-Virginia,$181
-New Jersey,$195
-Indiana,$156
-West Virginia,$191
-New York,$216
-Kansas,$118
-Wyoming,$207
-North Dakota,$101
+Ohio,$147,,
+Maine,$222,,
+Arizona,$287,,
+Oregon,$181,,
+Massachusetts,$222,,
+California,$258,,
+Rhode Island,$252,,
+Minnesota,$160,,
+Connecticut,$189,,
+South Dakota,$194,,
+Missouri,$172,,
+Florida,$217,,
+Texas,$214,,
+Nebraska,$119,,
+Hawaii,$248,,
+Vermont,$264,,
+New Hampshire,$237,,
+Illinois,$139,,
+Washington,$181,,
+New Mexico,$180,,
+Iowa,$123,,
+Wisconsin,$200,,
+North Carolina,$193,,
+Kentucky,$164,,
+Louisiana,$201,,
+Alaska,$162,,
+Oklahoma,$190,,
+Maryland,$186,,
+Arkansas,$178,,
+Pennsylvania,$192,,
+Michigan,$206,,
+Colorado,$271,,
+South Carolina,$220,,
+Mississippi,$161,,
+Delaware,$246,,
+Tennessee,$272,,
+Montana,$215,,
+Georgia,$188,,
+Utah,$211,,
+Nevada,$212,,
+Idaho,$186,,
+Virginia,$181,,
+New Jersey,$195,,
+Indiana,$156,,
+West Virginia,$191,,
+New York,$216,,
+Kansas,$118,,
+Wyoming,$207,,
+North Dakota,$101,,
