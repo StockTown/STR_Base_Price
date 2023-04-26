@@ -1,7 +1,7 @@
 bedroomMultiplier,30
 bathroomMultiplier,10
 cleaningCostMultiplier,30
-OperatingExpensePercentage,0.15
+operatingExpensePercentage,0.15
 amentiyDiminishingReturn,0.05
 avgLengthOfStay,4.3
 hotTub,0.2
