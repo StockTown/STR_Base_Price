@@ -1,9 +1,8 @@
 bedroomMultiplier,30
 bathroomMultiplier,10
-occupancyRate,0.6
 cleaningCostMultiplier,30
 OperatingExpensePercentage,0.15
-hostingFeePercentage,0.1
+amentiyDiminishingReturn,0.05
 avgLengthOfStay,4.3
 hotTub,0.2
 pool,0.2
